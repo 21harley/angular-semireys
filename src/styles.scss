@@ -1,3 +1,14 @@
 :root{
-    
-}/* You can add global styles to this file, and also import other style files */
+    --color-one:#000;
+    --color-two:#fff;
+    --color-three:rgb(67, 112, 217);
+    --color-four:#00f;
+    --color-five:rgb(19, 0, 54);
+
+    --text-color:var(--color-two);
+}
+*,html,body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}

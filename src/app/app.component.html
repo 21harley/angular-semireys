@@ -1,4 +1,16 @@
 <main class="main">
- <h1>{{title}}</h1>
+ <h1 class="main__title">{{title}}</h1>
+ <div *ngIf="cards.length > 0" class="container-cards">
+    <app-card
+    class="CommonModules__card"
+    *ngFor="let card of cards"
+    [title]="card.title"
+    [imageURL]="card.imageURL"
+    [altImg]="card.altImg"
+    [content]="card.content"
+    [description]="card.description"
+    [altImg]="card.altImg"
+     ></app-card>
+ </div>
 </main>
 <router-outlet />
